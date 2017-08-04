@@ -1,4 +1,22 @@
 <div>
-  <h1 class="tag"> Welcome to the Community </h1> 
-<body class="indexbackground">  </body>
+  <h1 class="tag"> Welcome to the Community </h1>
 <div>
+
+  <div>
+  <% @events.each do |f| %>
+
+    <div class="field">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+
+    <div class="field">
+      <%= f.label :location %>
+      <%= f.text_field :location%>
+    </div>
+
+    <div class="actions">
+      <%= f.submit %>
+      <%end%>
+
+  </div>

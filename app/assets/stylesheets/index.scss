@@ -1,0 +1,55 @@
+$brand-language: #B01302;
+// #3FBA100 yellow
+// #6C648B lavender
+// #B6A19E Dusty Rose
+// #0F1626 navy blue
+// #F5F5F5 Eggshell
+
+.topple-bar{
+  color: orange;
+  padding-bottom: 45px;
+}
+.top-color{
+  background: #F5F5F5; //aqua green
+  text-align: center;
+}
+
+.bottom-color{
+  background-color: #6C648B; //#B6A19E;
+  position: relative;
+  padding: 20px;
+  margin: -70px;
+
+  // color: white;
+  // padding-bottom: 80px;
+  // text-align: center;
+}
+
+.padding{
+  padding-bottom: 15px;
+}
+.lang-logo {
+  // display: block;
+  // background: #6C648B;
+  // border-radius: 50%;
+  // overflow: hidden;
+  // width: 150px;
+  // height: 150px;
+  // margin: auto;
+//   img {
+//     border: 2px solid black;
+//     // max-width: 200%;
+//     align: middle;
+//     width: 200px;
+//     // align-self: center;
+//   }
+ }
+
+.hero-text-box {
+    // margin-left: 300px;
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -4,8 +4,6 @@ class IndexController < ApplicationController
   end
 
   def show
-    
-    @events = User.events
   end
 
 end

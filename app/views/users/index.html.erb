@@ -1,22 +1,10 @@
 <div>
   <h1 class="tag"> Welcome to the Community </h1>
-<div>
-
   <div>
-  <% @events.each do |f| %>
-
-    <div class="field">
-      <%= f.label :name %>
-      <%= f.text_field :name %>
+    <div>
+      <h2> Create a new Event <h2>
+        <span> <%= link_to "Events", new_event_path %> </span>
     </div>
-
-    <div class="field">
-      <%= f.label :location %>
-      <%= f.text_field :location%>
-    </div>
-
-    <div class="actions">
-      <%= f.submit %>
-      <%end%>
 
   </div>
+</div>

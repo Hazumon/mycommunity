@@ -22,7 +22,7 @@
       <section class='top-bar-section'>
         <%if current_user %>
           <ul class='left'>
-            <li><%= link_to "Home", users_path%></li>
+            <li><%= link_to "Home", events_path%></li>
           </ul>
             <%else %>
             <ul class='left'>
@@ -31,7 +31,6 @@
         <%end%>
         <ul class='right'>
           <% if current_user%>
-            <li><%= link_to "Users", users_path %></li>
             <li>
               <a href='#'>
                 Signed in as <%= current_user.username %>

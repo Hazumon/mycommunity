@@ -5,6 +5,8 @@ class EventsController < ApplicationController
   end
 
   def show
+    #  @event = Event.find(params[:id])
+  # @restaurant = Restaurant.find(params[:id])
   end
 
   def new

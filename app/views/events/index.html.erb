@@ -1,11 +1,15 @@
-<h2> Hello from the Index view </h2>
 
-<% @events.each do |review| %>
+<div>
+    <h3> <%= link_to "Create New Event", new_event_path %> </h3>
+</div>
+
+<% @events.each do |event| %>
 
 
 <div class="row">
   <div class="small-7 medium-7 columns panel">
-    <h5 class="right"> <%= review.name %> </h5> <br>
+    <h5 class="right"> <%= event.name %> </h5>
+    <span class="right"> <%= link_to "Location", event %> </span>
   <div class="small-5 medium-5 columns panel">
     <h6 class=""> upload Image </h6>
 

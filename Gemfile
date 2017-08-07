@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'gmaps4rails'
 gem 'httparty', '~> 0.13.7'
 gem 'pry-rails'
 gem 'faker', '~> 1.6', '>= 1.6.6'

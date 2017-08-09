@@ -1,16 +1,20 @@
-<h2> Hello from the Index view </h2>
 
-<% @events.each do |review| %>
+<div>
+    <h3> <%= link_to "Create New Event", new_event_path %> </h3>
+</div>
+<% @events.each do |event| %>
 
 
 <div class="row">
   <div class="small-7 medium-7 columns panel">
-    <h5 class="right"> <%= review.name %> </h5> <br>
+    <h5 class="right"> <%= event.name %> </h5>
+    <span class="right"> <%= link_to "Location", event %> </span>
   <div class="small-5 medium-5 columns panel">
-    <h6 class=""> upload Image </h6>
+    <h6> upload Image </h6>
+    <img class="avatar" src="<%= current_user.avatar %>" />
+    <%end%>
+  </div>  <br>
 
-    <%end %>
-  </div><br>
     <h5 class="right"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. I </h5>
   </div>
 </div>

@@ -28,8 +28,12 @@ class EventsController < ApplicationController
 
   def review_params
     params.require(:event).permit(
+    :avatar,
     :name,
-    :location
+    :longitude,
+    :latitude,
+    :address,
+    :description
     )
   end
 

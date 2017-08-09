@@ -16,8 +16,12 @@ ActiveRecord::Schema.define(version: 20170807190720) do
   enable_extension "plpgsql"
 
   create_table "events", force: :cascade do |t|
+    t.string "avatar"
     t.string "name", null: false
-    t.string "location", null: false
+    t.float "longitude"
+    t.float "latitude"
+    t.string "address", null: false
+    t.text "description", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

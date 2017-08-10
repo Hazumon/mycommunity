@@ -241,6 +241,7 @@ GEM
     foundation-rails (5.4.5.0)
       railties (>= 3.1.0)
       sass (>= 3.2.0)
+    geocoder (1.4.4)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     gmaps4rails (2.1.2)
@@ -405,6 +406,7 @@ DEPENDENCIES
   faker (~> 1.6, >= 1.6.6)
   fog
   foundation-rails
+  geocoder
   gmaps4rails
   httparty (~> 0.13.7)
   jbuilder (~> 2.5)

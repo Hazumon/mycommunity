@@ -2,11 +2,20 @@ class EventsController < ApplicationController
 
   def index
     @events = Event.all
+    # @event = Event.find(params[:id])
+    @hash = Gmaps4rails.build_markers(@events) do |user, marker|
+      marker.lat user.latitude
+      marker.lng user.longitude
+    end
   end
 
   def show
-    #  @event = Event.find(params[:id])
-  # @restaurant = Restaurant.find(params[:id])
+
+    @event = Event.find(params[:id])
+    @hash = Gmaps4rails.build_markers(@event) do |user, marker|
+      marker.lat user.latitude
+      marker.lng user.longitude
+    end
   end
 
   def new
@@ -28,8 +37,12 @@ class EventsController < ApplicationController
 
   def review_params
     params.require(:event).permit(
+    :avatar,
     :name,
-    :location
+    :longitude,
+    :latitude,
+    :address,
+    :description
     )
   end
 

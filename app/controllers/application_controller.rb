@@ -6,7 +6,14 @@ class ApplicationController < ActionController::Base
 
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: [:username, :avatar])
-    # devise_parameter_sanitizer.permit(:sign_up) << :avatar
     devise_parameter_sanitizer.permit(:account_update, keys: [:username, :avatar])
+  end
+
+  def after_sign_in_path_for(resources)
+    events_path
+  end
+
+  def after_sign_up_path_for(resources)
+    events_path
   end
 end

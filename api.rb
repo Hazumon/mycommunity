@@ -5,18 +5,18 @@
 #
 # puts response.body
 
-require 'rubygems'
-require 'httparty'
-
-class Courses
-  include HTTParty
-
-  base_uri 'edutecional-resty.herokuapp.com/'
-
-  def posts
-    self.class.get('/posts.json')
-  end
-end
-
-edutectional_rusty = Courses.new
-puts edutectional_rusty
+# require 'rubygems'
+# require 'httparty'
+#
+# class Courses
+#   include HTTParty
+#
+#   base_uri 'edutecional-resty.herokuapp.com/'
+#
+#   def posts
+#     self.class.get('/posts.json')
+#   end
+# end
+#
+# edutectional_rusty = Courses.new
+# puts edutectional_rusty

@@ -1,0 +1,9 @@
+<h1> Meetup Index </h1>
+
+<ul>
+<% @meetups_list.each do |meetup| %>
+<li> <%=  meetup.name  %></li>
+<li> <%= meetup.link %> </li>
+<li> <%= meetup.lat %> </li>
+</ul>
+<%end%>

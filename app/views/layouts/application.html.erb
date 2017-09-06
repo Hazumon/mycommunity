@@ -22,7 +22,8 @@
       <section class='top-bar-section'>
         <%if current_user %>
           <ul class='left'>
-            <li><%= link_to "Home", events_path%></li>
+            <li><%= link_to "Home", root_path%></li>
+            <li><%= link_to "Events", events_path%></li>
           </ul>
             <%else %>
             <ul class='left'>

@@ -7,5 +7,6 @@ CarrierWave.configure do |config|
       region: "us-east-2"
     }
     config.fog_directory  = ENV["S3_BUCKET"]
+    #this is connected to .env
   end
 end

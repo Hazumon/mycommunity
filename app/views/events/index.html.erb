@@ -1,11 +1,13 @@
 
 <div>
+  <% if current_user %>
     <h3> <%= link_to "Create New Event", new_event_path %> </h3>
-</div>
+  <%end%>
+</div><br>
 <% @events.each do |event| %>
 
-<div class="row">
-  <div class="small-7 medium-7 columns panel">
+<div class="row data-equalizer">
+  <div class="small-6 medium-6 columns panel">
     <dl class="sub-nav">
     <dt> <%= event.name %>: </dt>
     <dd class="active"> <%= link_to "Location", event %></dd>
@@ -14,12 +16,13 @@
     </dl>
 
 
-  <div class="small-5 medium-5 columns panel">
+  <div class="small-12 medium-12 columns panel" data-equalizer-watch>
     <h6> upload Image </h6>
     <img class="avatar" src="<%= event.avatar %>" />
-  </div>  <br>
+  </div>  <br><br>
 
-    <h5 class="right"> <%=event.description%> </h5>
+      <h5 class="panel small-12 medium-12" data-equalizer-watch> Description: <br> <br><%=event.description%> </h5>
+
   </div>
 </div>
 <%end%>

@@ -2,7 +2,7 @@
 
 Mycommunity is a web application for creating advertisement flyers for community events. It was built with Ruby on Rails on top of Foundation framework and a PostgreSQL database. Mycommunity features a the Google Maps API which allows users to display the location of their community event to efficiently maximize turnout results to an event dynamically. Users can create secure accounts (Devise) and upload an avatar to be associated with their profile, then add and their event so users can review them. This application is a unique demonstration of using Google Maps to link to community events.
 
-Mycommunity has been deployed to Heroku:  bostonmycommunity.herokuapp.com/
+Mycommunity link: **bostonmycommunity.herokuapp.com/**
 
 * Technologies
 

@@ -8,7 +8,7 @@ end
 gem 'meetup_client_rails'
 gem 'geocoder'
 gem 'gmaps4rails'
-gem 'httparty', '~> 0.13.7'
+gem 'httparty', '~> 0.21.0'
 gem 'pry-rails'
 gem 'faker', '~> 1.6', '>= 1.6.6'
 gem 'devise'
